@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estadísticas – Resident Evil Fan Web</title>
+    <meta
+      name="description"
+      content="Tabla de stats de personajes y villanos de la saga Resident Evil"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="comun.css" />
+    <link rel="stylesheet" href="humo.css" />
+    <link rel="stylesheet" href="stats.css" />
+  </head>
+  <body>
+    <!-- CAPAS DE HUMO PARA EFECTO REALISTA -->
+    <div class="smoke-container">
+      <div class="smoke smoke-normal smoke-1"></div>
+      <div class="smoke smoke-normal smoke-2"></div>
+      <div class="smoke smoke-normal smoke-3"></div>
+      <div class="smoke smoke-normal smoke-4"></div>
+      <div class="smoke smoke-normal smoke-5"></div>
+      <div class="smoke smoke-normal smoke-6"></div>
+    </div>
+
+    <!-- NAV TRANSPARENTE -->
+    <nav class="nav-principal">
+      <a href="index.html" class="nav-logo">RE</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="stats.html">Estadísticas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button id="btn-audio" class="btn-audio">Activar sonido</button>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="stats-main" style="padding-top: 100px">
+      <section class="contacto">
+        <h2>Estadísticas de Personajes</h2>
+
+        <!-- Tabla de protagonistas -->
+        <h3>Protagonistas</h3>
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Personaje</th>
+              <th>Primera Aparición</th>
+              <th>Rol</th>
+              <th>Armas Favoritas</th>
+              <th>Habilidad Especial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/chris.jpg" alt="Chris Redfield" />
+                  <span>Chris Redfield</span>
+                </div>
+              </td>
+              <td>RE1 (1996)</td>
+              <td>Protagonista</td>
+              <td>Pistolas, Escopeta, Rifle de asalto</td>
+              <td>Fuerza y resistencia física sobresaliente</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/jill.jpg" alt="Jill Valentine" />
+                  <span>Jill Valentine</span>
+                </div>
+              </td>
+              <td>RE1 (1996)</td>
+              <td>Protagonista</td>
+              <td>Pistolas, Escopeta</td>
+              <td>Experta en bombas y cerraduras</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/leon.jpg" alt="Leon S. Kennedy" />
+                  <span>Leon S. Kennedy</span>
+                </div>
+              </td>
+              <td>RE2 (1998)</td>
+              <td>Protagonista</td>
+              <td>Pistolas, Rifle, Granadas</td>
+              <td>Habilidad táctica y de supervivencia</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/claire.jpg" alt="Claire Redfield" />
+                  <span>Claire Redfield</span>
+                </div>
+              </td>
+              <td>RE2 (1998)</td>
+              <td>Protagonista</td>
+              <td>Pistolas, Escopeta</td>
+              <td>Recuperación rápida y conducción</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/ada.jpg" alt="Ada Wong" />
+                  <span>Ada Wong</span>
+                </div>
+              </td>
+              <td>RE2 (1998)</td>
+              <td>Aliada / Espía</td>
+              <td>Pistolas, Ballesta</td>
+              <td>Sigilo y espionaje</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Tabla de villanos -->
+        <h3>Villanos</h3>
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Villano</th>
+              <th>Primera Aparición</th>
+              <th>Tipo</th>
+              <th>Armas / Poderes</th>
+              <th>Debilidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/wesker.jpg" alt="Albert Wesker" />
+                  <span>Albert Wesker</span>
+                </div>
+              </td>
+              <td>RE1 (1996)</td>
+              <td>Humano / Genéticamente mejorado</td>
+              <td>Velocidad sobrehumana, fuerza, virus Uroboros</td>
+              <td>Exposición a virus y ataques concentrados</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/nemesis.jpg" alt="Nemesis" />
+                  <span>Nemesis</span>
+                </div>
+              </td>
+              <td>RE3 (1999)</td>
+              <td>B.O.W.</td>
+              <td>Lanzacohetes, fuerza extrema</td>
+              <td>Daño extremo en cabeza / armas pesadas</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/mrx.jpg" alt="Mr. X" />
+                  <span>Mr. X</span>
+                </div>
+              </td>
+              <td>RE2 Remake (2019)</td>
+              <td>B.O.W.</td>
+              <td>Fuerza descomunal, pistola</td>
+              <td>Disparo en cabeza / trampas</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/william.jpg" alt="William Birkin" />
+                  <span>William Birkin</span>
+                </div>
+              </td>
+              <td>RE2 (1998)</td>
+              <td>Científico mutado</td>
+              <td>Virus G, regeneración rápida</td>
+              <td>Daño en órganos críticos</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-personaje">
+                  <img src="assets/img/ustanak.jpg" alt="Ustanak" />
+                  <span>Ustanak</span>
+                </div>
+              </td>
+              <td>RE6 (2012)</td>
+              <td>B.O.W.</td>
+              <td>Fuerza y armas integradas</td>
+              <td>Precisión y armas pesadas</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Tabla opcional: armas -->
+        <h3>Armas icónicas</h3>
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Arma</th>
+              <th>Personaje Principal</th>
+              <th>Tipo</th>
+              <th>Daño / Efecto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Colt M1911</td>
+              <td>Chris, Jill, Leon</td>
+              <td>Pistola</td>
+              <td>Daño moderado, confiable</td>
+            </tr>
+            <tr>
+              <td>Escopeta</td>
+              <td>Chris, Jill, Claire</td>
+              <td>Escopeta</td>
+              <td>Daño alto a corta distancia</td>
+            </tr>
+            <tr>
+              <td>Rifle de asalto</td>
+              <td>Chris, Leon</td>
+              <td>Rifle</td>
+              <td>Daño medio-alto, largo alcance</td>
+            </tr>
+            <tr>
+              <td>Ballesta</td>
+              <td>Ada Wong</td>
+              <td>Rango Medio</td>
+              <td>Silenciosa y precisa</td>
+            </tr>
+            <tr>
+              <td>Lanzacohetes</td>
+              <td>Nemesis</td>
+              <td>Explosivo</td>
+              <td>Daño masivo, destrucción total</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- AUDIO DE FONDO -->
+    <audio id="bg-audio" loop>
+      <source src="assets/video/sound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Soporte y ayuda – Sitio web de fan – © 2025 - by: Scheneider BZ</p>
+    </footer>
+
+    <!-- JS para activar el audio -->
+    <script>
+      const btnAudio = document.getElementById("btn-audio");
+      const audio = document.getElementById("bg-audio");
+      btnAudio.addEventListener("click", () => {
+        audio.play();
+        btnAudio.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

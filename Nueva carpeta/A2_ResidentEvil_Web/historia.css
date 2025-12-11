@@ -1,0 +1,253 @@
+/* Estilos específicos para la página de Historia */
+
+.historia-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 100px;
+}
+
+.historia-section {
+  background: linear-gradient(135deg, rgba(34, 34, 34, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #ff4c4c;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 76, 76, 0.1);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecerSeccion 0.6s ease forwards;
+}
+
+.historia-section:nth-child(1) { animation-delay: 0.1s; }
+.historia-section:nth-child(2) { animation-delay: 0.2s; }
+.historia-section:nth-child(3) { animation-delay: 0.3s; }
+.historia-section:nth-child(4) { animation-delay: 0.4s; }
+.historia-section:nth-child(5) { animation-delay: 0.5s; }
+
+.historia-section:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(255, 76, 76, 0.4), 0 0 40px rgba(255, 76, 76, 0.2);
+  border-left-width: 6px;
+}
+
+.historia-section h2 {
+  color: #ff4c4c;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ff4c4c;
+  padding-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(255, 76, 76, 0.5);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.historia-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff4c4c, #ff6b6b, #ff4c4c);
+  transition: width 0.5s ease;
+}
+
+.historia-section:hover h2::after {
+  width: 100%;
+}
+
+.historia-section h3 {
+  color: #ff6b6b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.historia-section p {
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  text-align: justify;
+}
+
+.historia-section strong {
+  color: #ff4c4c;
+}
+
+.linea-tiempo {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.linea-tiempo li {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(20, 20, 20, 0.4) 100%);
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 8px;
+  border-left: 3px solid #ff4c4c;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.linea-tiempo li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 76, 76, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.linea-tiempo li:hover::before {
+  left: 100%;
+}
+
+.linea-tiempo li:hover {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(30, 0, 0, 0.6) 100%);
+  border-left-width: 5px;
+  transform: translateX(8px);
+  box-shadow: 0 4px 15px rgba(255, 76, 76, 0.3);
+}
+
+.año-timeline {
+  color: #ff4c4c;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.lista-juegos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.item-juego {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(20, 20, 20, 0.4) 100%);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-juego::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 76, 76, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.item-juego:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.item-juego:hover {
+  border-color: #ff4c4c;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(30, 0, 0, 0.6) 100%);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 76, 76, 0.4);
+}
+
+.item-juego strong {
+  color: #ff4c4c;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cronologia {
+  line-height: 2;
+  padding-left: 1.5rem;
+}
+
+.cronologia li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contenedor con imagen y texto */
+.contenido-con-imagen {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.texto-historia {
+  flex: 1;
+}
+
+.imagen-historia {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.imagen-historia img {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #444;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.imagen-historia img:hover {
+  transform: scale(1.05);
+  border-color: #ff4c4c;
+}
+
+
+@media (max-width: 768px) {
+  .historia-main {
+    padding: 1rem;
+    padding-top: 100px;
+  }
+
+  .historia-section {
+    padding: 1.5rem;
+  }
+
+  .historia-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .lista-juegos {
+    grid-template-columns: 1fr;
+  }
+
+  .contenido-con-imagen {
+    grid-template-columns: 1fr;
+  }
+
+  .imagen-historia {
+    margin-top: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .imagen-historia img {
+    max-width: 150px;
+    height: 150px;
+  }
+}
+

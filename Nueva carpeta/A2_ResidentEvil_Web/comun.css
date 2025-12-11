@@ -1,0 +1,138 @@
+/* =========================
+   ESTILOS COMUNES - RECICLADOS
+   Animaciones, overlays y utilidades compartidas
+========================= */
+
+/* Animaciones comunes */
+@keyframes aparecerSeccion {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecerTitulo {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecerTabla {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecerArticulo {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecerCampo {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aparecerBoton {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Overlay oscuro común */
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Contenedor principal común */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Sección con card común */
+.card-section {
+  background: linear-gradient(135deg, rgba(34, 34, 34, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #ff4c4c;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 76, 76, 0.1);
+  transition: all 0.4s ease;
+}
+
+/* Título común con estilo */
+.titulo-rojo {
+  color: #ff4c4c;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ff4c4c;
+  padding-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(255, 76, 76, 0.5);
+}
+
+/* Enlace destacado común */
+.enlace-destacado {
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0 2px;
+}
+
+.enlace-destacado::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff6b6b;
+  transition: width 0.3s ease;
+}
+
+.enlace-destacado:hover {
+  color: #ff6b6b;
+  text-shadow: 0 0 8px rgba(255, 107, 107, 0.8);
+}
+
+.enlace-destacado:hover::before {
+  width: 100%;
+}
+
+/* Media queries comunes */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 1rem;
+    padding-top: 100px;
+  }
+
+  .card-section {
+    padding: 1.5rem;
+  }
+
+  .titulo-rojo {
+    font-size: 1.5rem;
+  }
+}
+
