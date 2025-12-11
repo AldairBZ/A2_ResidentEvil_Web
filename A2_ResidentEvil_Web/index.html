@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resident Evil – Personajes de toda la saga</title>
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Web que presenta los personajes principales y villanos de la saga Resident Evil."
+    />
+    <meta
+      name="keywords"
+      content="Resident Evil, personajes, Chris Redfield, Leon Kennedy"
+    />
+    <!-- Conexión CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="comun.css" />
+    <!-- SEO con JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Resident Evil Fan Web",
+        "url": "http://www.tusitio.com",
+        "logo": "http://www.tusitio.com/assets/img/logo.png"
+      }
+    </script>
+  </head>
+  <body>
+    <!-- NAV TRANSPARENTE -->
+    <nav class="nav-principal">
+      <a href="index.html" class="nav-logo">RE</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="stats.html">Estadísticas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button id="btn-audio" class="btn-audio">Activar sonido</button>
+    </nav>
+
+    <!-- HEADER CON VIDEO DE FONDO -->
+    <header class="header">
+      <video autoplay muted loop playsinline class="header-video">
+        <source src="assets/video/intro.mp4" type="video/mp4" />
+      </video>
+      <audio id="bg-audio" loop>
+        <source src="assets/video/sound.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="overlay">
+        <h1>Resident Evil</h1>
+        <p>Explora los protagonistas y villanos de toda la saga</p>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL CON LAYOUT -->
+    <main
+      style="
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 80px;
+      "
+    >
+      <!-- PERSONAJES CLÁSICOS -->
+      <section class="personajes">
+        <h2>Personajes Clásicos e Icónicos</h2>
+        <div class="grid-personajes">
+          <article>
+            <img src="assets/img/chris.jpg" alt="Chris Redfield" />
+            <div class="bio">
+              <h3>Chris Redfield</h3>
+              <p>Protagonista desde RE1 y varias entregas más.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/jill.jpg" alt="Jill Valentine" />
+            <div class="bio">
+              <h3>Jill Valentine</h3>
+              <p>Protagonista de RE3 y parte del equipo S.T.A.R.S.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/leon.jpg" alt="Leon S. Kennedy" />
+            <div class="bio">
+              <h3>Leon S. Kennedy</h3>
+              <p>Debuta en RE2 y protagonista de RE4 y RE6.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/claire.jpg" alt="Claire Redfield" />
+            <div class="bio">
+              <h3>Claire Redfield</h3>
+              <p>Hermana de Chris, protagonista en RE2 y otros.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/ada.jpg" alt="Ada Wong" />
+            <div class="bio">
+              <h3>Ada Wong</h3>
+              <p>Misteriosa espía, aliada ocasional de Leon.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/wesker.jpg" alt="Albert Wesker" />
+            <div class="bio">
+              <h3>Albert Wesker</h3>
+              <p>Uno de los villanos más importantes de la saga.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- OTROS PERSONAJES -->
+      <section class="personajes">
+        <h2>Otros Personajes Importantes</h2>
+        <div class="grid-personajes">
+          <article>
+            <img src="assets/img/rebecca.jpg" alt="Rebecca Chambers" />
+            <div class="bio">
+              <h3>Rebecca Chambers</h3>
+              <p>Miembro del equipo Bravo en RE0.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/barry.jpg" alt="Barry Burton" />
+            <div class="bio">
+              <h3>Barry Burton</h3>
+              <p>Compañero de Jill en RE1.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/sherry.jpg" alt="Sherry Birkin" />
+            <div class="bio">
+              <h3>Sherry Birkin</h3>
+              <p>Conocida desde RE2 hasta RE6.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/william.jpg" alt="William Birkin" />
+            <div class="bio">
+              <h3>William Birkin</h3>
+              <p>Científico detrás del virus G.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/piers.jpg" alt="Piers Nivans" />
+            <div class="bio">
+              <h3>Piers Nivans</h3>
+              <p>Compañero de Chris en RE6.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/jake.jpg" alt="Jake Muller" />
+            <div class="bio">
+              <h3>Jake Muller</h3>
+              <p>Hijo de Wesker, aparece en RE6.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- LISTA DE JUEGOS PRINCIPALES -->
+      <section class="personajes">
+        <h2>Orden Cronológico de la Saga</h2>
+        <div style="max-width: 800px; margin: 2rem auto; text-align: left; color: #fff; background-color: rgba(34, 34, 34, 0.8); padding: 2rem; border-radius: 8px;">
+          <ol style="line-height: 2;">
+            <li><strong>Resident Evil 0</strong> (2002) - Precuela</li>
+            <li><strong>Resident Evil</strong> (1996) - La mansión original</li>
+            <li><strong>Resident Evil 2</strong> (1998) - Raccoon City</li>
+            <li><strong>Resident Evil 3: Nemesis</strong> (1999) - Escape de la ciudad</li>
+            <li><strong>Resident Evil 4</strong> (2005) - Nueva era</li>
+            <li><strong>Resident Evil 5</strong> (2009) - África</li>
+            <li><strong>Resident Evil 6</strong> (2012) - Múltiples historias</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SPIN-OFFS Y VILLANOS -->
+      <section class="personajes">
+        <h2>Spin-offs y Villanos Secundarios</h2>
+        <div class="grid-personajes">
+          <article>
+            <img src="assets/img/helena.jpg" alt="Helena Harper" />
+            <div class="bio">
+              <h3>Helena Harper</h3>
+              <p>Compañera de Leon en RE6.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/carlos.jpg" alt="Carlos Oliveira" />
+            <div class="bio">
+              <h3>Carlos Oliveira</h3>
+              <p>Ayuda a Jill en RE3.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/hunk.jpg" alt="Hunk" />
+            <div class="bio">
+              <h3>Hunk</h3>
+              <p>Conocido por la misión “4th Survivor”.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/nemesis.jpg" alt="Nemesis" />
+            <div class="bio">
+              <h3>Nemesis</h3>
+              <p>Enemigo icónico de RE3.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/mrx.jpg" alt="Mr. X" />
+            <div class="bio">
+              <h3>Mr. X</h3>
+              <p>Antagonista en RE2 y RE3 Remake.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/img/ustanak.jpg" alt="Ustanak" />
+            <div class="bio">
+              <h3>Ustanak</h3>
+              <p>Villano de RE6.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Soporte y ayuda – Sitio web de fan – © 2025 - by: Scheneider BZ</p>
+    </footer>
+
+    <!-- JS para activar el audio -->
+    <script>
+      const btnAudio = document.getElementById("btn-audio");
+      const audio = document.getElementById("bg-audio");
+      btnAudio.addEventListener("click", () => {
+        audio.play();
+        btnAudio.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
