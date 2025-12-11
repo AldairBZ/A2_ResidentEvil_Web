@@ -1,3 +1,4 @@
+# .github/workflows/github-pages.yml
 name: GitHub Pages
 
 on:
@@ -9,9 +10,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      # Paso 1: Clonar el repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Paso 2: Publicar la carpeta en GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./A2_ResidentEvil_Web
+          publish_dir: A2_ResidentEvil_Web
+          # limpia el branch gh-pages antes de publicar
+          clean: true
